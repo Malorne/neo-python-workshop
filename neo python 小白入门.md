@@ -1,5 +1,3 @@
-#NEO_Python
-
 # NEO Python 小白入门
 本教程适合初步接触 NEO 的 Python 开发者快速入门使用，如想进行更全面的学习可移步我们的 [技术文档](http://docs.neo.org/zh-cn/index.html)。为避免遇到不必要的麻烦，建议按照教程的顺序一步步进行。
 ---
@@ -17,7 +15,7 @@ NEO 有两个全节点程序：
 ---
 ## 关于NEO Python：
 目的：
-	将[NEO Project](https://github.com/neo-project)从C#完全移植到 Python
+	将[NEO Project](https://github.com/neo-project)从 C# 完全移植到 Python
 NEO-Python目前的功能:
 	运行基于Python的P2P节点
 	提供可交互CLI进行配置节点和检测区块链
