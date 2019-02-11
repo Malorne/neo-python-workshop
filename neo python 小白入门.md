@@ -24,7 +24,8 @@ NEO 有两个全节点程序：
 ## 关于NEO Python：
 
 目的：
- 1. 将[NEO Project](https://github.com/neo-project)从C#完全移植到 Python
+ 1. 将[NEO Project](https://github.com/neo-project)从C#完全移植到 Python 
+
 NEO-Python目前的功能:
  1. 运行基于Python的P2P节点
  2. 提供可交互CLI进行配置节点和检测区块链
@@ -35,9 +36,11 @@ NEO-Python目前的功能:
  7. NEP7和NEP8支持
  8. 通知服务器（用于查看NEP5代币的转账）
  9. Runtime.Log 和 Runtime.Notify 活动的监视
+
 将会逐步添加的功能：
  1. 成为共识节点
- 2. 优化智能合约的调试和审查能力
+ 2. 优化智能合约的调试和审查能力 
+
 文档：
  更多信息可见[Docs](https://neo-python.readthedocs.io/en/latest/)
 
@@ -156,7 +159,7 @@ NEO-Python目前的功能:
 
 输入“help”得到可用命令的列表。
 
--   ![avatar](./NeoPythonGuide/1.png)![avatar](file:///Users/wave/Documents/NeoPythonGuide/1.png)
+-   ![avatar](./NeoPythonGuide/1.png)
     
 
 ### 2.2 打开钱包
@@ -169,7 +172,7 @@ NEO-Python目前的功能:
 
 使用命令“wallet”可显示钱包的详细信息。
 
-![avatar](./NeoPythonGuide/2.png)![avatar](file:///Users/wave/Documents/NeoPythonGuide/2.png)
+![avatar](./NeoPythonGuide/2.png)
 
 ### 2.3 创建新钱包
 
@@ -190,7 +193,7 @@ NEO-Python目前的功能:
 
 这一操作需要15～20秒的确认时间。
 
-![avatar](./NeoPythonGuide/3.png)![avatar](file:///Users/wave/Documents/NeoPythonGuide/3.png)
+![avatar](./NeoPythonGuide/3.png)
 
 * * *
 
@@ -249,7 +252,7 @@ NEO Python 中的智能合约使用 Python 编写并由 neo-boa 编译。注意�
 
 如果出现找不到文件或路径的错误，可尝试使用 1-print.py 的绝对路径。在 SmartContract.Runtime.Log 下可见输出了“Hello World”。
 
-![avatar](./NeoPythonGuide/4.png)![avatar](file:///Users/wave/Documents/NeoPythonGuide/4.png)
+![avatar](./NeoPythonGuide/4.png)
 
 若成功运行，应当输出了 **.avm** 文件，即可以在 NeoVM 上运行的文件。
 
@@ -262,7 +265,7 @@ NEO Python 中的智能合约使用 Python 编写并由 neo-boa 编译。注意�
 
 你可以输入一些信息：合约名称，合约版本，合约作者，联系方式，合约描述。输入密码并且等待15～20秒即可部署完成。要注意的是，其中参数类型和返回值类型并不是指定智能合约的参数和返回值类型，而是用于保存在区块链中，对智能合约的调用者起到提示作用。实际上的类型由智能合约的源文件决定。
 
-![avatar](./NeoPythonGuide/5.png)![avatar](file:///Users/wave/Documents/NeoPythonGuide/5.png)
+![avatar](./NeoPythonGuide/5.png)
 
 3.1.3 调用合约
 首先查找合约的 hash：
@@ -279,7 +282,7 @@ NEO Python 中的智能合约使用 Python 编写并由 neo-boa 编译。注意�
 
 如查找 Hello World 并调用，在 SmartContract.Runtime.Log 中可见输出。
 
-![avatar](./NeoPythonGuide/6.png)![avatar](file:///Users/wave/Documents/NeoPythonGuide/6.png)
+![avatar](./NeoPythonGuide/6.png)
 
 ### 3.2 打印和通知
 
@@ -291,7 +294,7 @@ NEO Python 中的智能合约使用 Python 编写并由 neo-boa 编译。注意�
 
 从结果中可见 print(), log(), notify()函数的不同。从代码看，前两个函数本质上相同，输出简单的开发信息。而 notify()函数可用于输出变量。
 
-![avatar](./NeoPythonGuide/7.png)![avatar](file:///Users/wave/Documents/NeoPythonGuide/7.png)
+![avatar](./NeoPythonGuide/7.png)
 
 ### 3.3 计算器
 
@@ -303,7 +306,7 @@ NEO Python 中的智能合约使用 Python 编写并由 neo-boa 编译。注意�
 
 其中{test_params}中包含三个参数，add、1、2。返回值为 Integer，值为3。再次调用该合约可使用3.1.3中的方法。但在{contract hash}后需要三个参数。
 
-![avatar](./NeoPythonGuide/8.png)![avatar](file:///Users/wave/Documents/NeoPythonGuide/8.png)
+![avatar](./NeoPythonGuide/8.png)
 
 ### 3.4 存储空间
 
@@ -314,7 +317,7 @@ NEO Python 中的智能合约使用 Python 编写并由 neo-boa 编译。注意�
     sc build_run smart-contracts/4-storage.py True False False 02 ff
 ```
 
-![avatar](./NeoPythonGuide/9.png)![avatar](file:///Users/wave/Documents/NeoPythonGuide/9.png)
+![avatar](./NeoPythonGuide/9.png)
 
 可见{needs_storage}为True，该合约将使用存储空间。之后每次运行：
 
@@ -322,7 +325,7 @@ NEO Python 中的智能合约使用 Python 编写并由 neo-boa 编译。注意�
     sc build_run smart-contracts/4-storage.py True False False 02 ff
 ```
 
-![avatar](./NeoPythonGuide/10.png)![avatar](file:///Users/wave/Documents/NeoPythonGuide/10.png)
+![avatar](./NeoPythonGuide/10.png)
 
 返回值中New value written into storage的值都会加1。再清空存储并部署：
 
@@ -362,7 +365,7 @@ NEO Python 中的智能合约使用 Python 编写并由 neo-boa 编译。注意�
 
 返回值最后为1则表明注册域名成功。
 
-![avatar](./NeoPythonGuide/11.png)![avatar](file:///Users/wave/Documents/NeoPythonGuide/11.png)
+![avatar](./NeoPythonGuide/11.png)
 
 3.5.2 查询域名
 
@@ -370,7 +373,7 @@ NEO Python 中的智能合约使用 Python 编写并由 neo-boa 编译。注意�
     sc invoke {contract_hash} query ['{name}']
 ```
 
-![avatar](./NeoPythonGuide/12.png)![avatar](file:///Users/wave/Documents/NeoPythonGuide/12.png)
+![avatar](./NeoPythonGuide/12.png)
 
 该查询将返回一个 ByteArray，而地址是一个字符串，两者看似不同。但我们有一个[工具](https://peterlinx.github.io/DataTransformationTools/)可以转化他们。
 
@@ -380,7 +383,7 @@ NEO Python 中的智能合约使用 Python 编写并由 neo-boa 编译。注意�
 * 查看 Address 的值，发现是与域名的地址相等的
 ```
 
-![avatar](./NeoPythonGuide/13.png)![avatar](file:///Users/wave/Documents/NeoPythonGuide/13.png)
+![avatar](./NeoPythonGuide/13.png)
 
 3.5.3 删除域名
 
