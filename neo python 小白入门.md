@@ -39,10 +39,8 @@ NEO-Python目前的功能:
  1. 成为共识节点
  2. 优化智能合约的调试和审查能力
 文档：
+ 更多信息可见[Docs](https://neo-python.readthedocs.io/en/latest/)
 
-```
-更多信息可见[Docs](https://neo-python.readthedocs.io/en/latest/)
-```
 
 * * *
 
