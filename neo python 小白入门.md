@@ -61,11 +61,6 @@ NEO-Python目前的功能:
 
 在 CentOS, RHEL, Fedora 上安装 Python 可参考[此处](https://tecadmin.net/install-python-3-6-on-centos/)。
 
-下图可以帮助理解 NEO Python 中用户、开发环境的交互：
-- [ ]  TODO
-
-~在 Ubuntu (v16.04 及更高版本), Mint v18.3, CentOS v7.5, macOS Sierra,  macOS Mojave 上测试通过~
-
 ---
 ## 第一步：环境配置
 
