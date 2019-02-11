@@ -24,20 +24,20 @@ NEO 有两个全节点程序：
 ## 关于NEO Python：
 
 目的：
- 将[NEO Project](https://github.com/neo-project)从C#完全移植到 Python
+ 1. 将[NEO Project](https://github.com/neo-project)从C#完全移植到 Python
 NEO-Python目前的功能:
- 运行基于Python的P2P节点
- 提供可交互CLI进行配置节点和检测区块链
- 编写、部署及调用以 Python 编写的智能合约或任意 **.avm** 格式的合约
- 钱包的基础功能（未经过完全测试，请勿在主网使用）
- RPC的客户端和服务器
- 符合NEP2和NEP5标准的钱包功能
- NEP7和NEP8支持
- 通知服务器（用于查看NEP5代币的转账）
- Runtime.Log 和 Runtime.Notify 活动的监视
+ 1. 运行基于Python的P2P节点
+ 2. 提供可交互CLI进行配置节点和检测区块链
+ 3. 编写、部署及调用以 Python 编写的智能合约或任意 **.avm** 格式的合约
+ 4. 钱包的基础功能（未经过完全测试，请勿在主网使用）
+ 5. RPC的客户端和服务器
+ 6. 符合NEP2和NEP5标准的钱包功能
+ 7. NEP7和NEP8支持
+ 8. 通知服务器（用于查看NEP5代币的转账）
+ 9. Runtime.Log 和 Runtime.Notify 活动的监视
 将会逐步添加的功能：
- 成为共识节点
- 优化智能合约的调试和审查能力
+ 1. 成为共识节点
+ 2. 优化智能合约的调试和审查能力
 文档：
 
 ```
