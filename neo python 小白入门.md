@@ -364,11 +364,9 @@ NEO Python 中的智能合约使用 Python 编写并由 neo-boa 编译。注意�
 
 该查询将返回一个 ByteArray，而地址是一个字符串，两者看似不同。但我们有一个[工具](https://peterlinx.github.io/DataTransformationTools/)可以转化他们。
 
-```
 * 将 ByteArray 复制到 Address (little endian) 下方的 Script Hash 处
 * 点击 Transform
 * 查看 Address 的值，发现是与域名的地址相等的
-```
 
 ![avatar](./NeoPythonGuide/13.png)
 
