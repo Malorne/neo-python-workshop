@@ -2,19 +2,17 @@
 
 本教程适合初步接触 NEO 的 Python 开发者快速入门使用，如想进行更全面的学习可移步我们的 [技术文档](http://docs.neo.org/zh-cn/index.html)。为避免遇到不必要的麻烦，建议按照教程的顺序一步步进行。
 
-## 写在开始之前：
+- 写在开始之前：
 
 NEO节点介绍：
 
 全节点（full nodes）是存储 NEO 区块链全部数据的节点，通过 P2P 的方式与区块链网络连接，在区块链网络中，所有的全节点都是平等的，既充当客户端又充当服务器。
 NEO 有两个全节点程序：
 
-```
 1. NEO-GUI: 
 面向普通用户，提供图形界面，具有除共识外的所有功能。
 2. NEO-CLI:
 面向开发者，提供命令行界面，具有一些钱包操作的基本功能，除此之外    还会对外提供 API，可以与其它节点达成共识，参与区块的生成。
-```
 
 在NEO Python中我们使用NEO-CLI。
 相关项目：[neo-python-rpc](https://github.com/CityOfZion/neo-python-rpc)、[neo-boa](https://github.com/CityOfZion/neo-boa)
@@ -47,25 +45,19 @@ NEO-Python目前的功能:
 
 * * *
 
-## 你将会学到什么：
-
-```
-部署 NEO Python 环境
-管理钱包
-搭建私链
-编写、部署和调用智能合约
-```
+- 你将会学到什么：
+1. 部署 NEO Python 环境
+2. 管理钱包
+3. 搭建私链
+4. 编写、部署和调用智能合约
 
 * * *
 
 ## 你需要准备：
-
-```
 1. Linux / macOS
 2. [Docker](https://github.com/yeasy/docker_practice)
 3. [LevelDB](http://leveldb.org/)
 4. [Python3.6 (or higher)](https://www.python.org/downloads/)
-```
 
 > Docker 是一个开源的应用引擎容器，让开发者可以打包应用及其以来包到一个可移植的容器（Container）中，再发布到 Linux 机器上，实现虚拟化，容器之间不会有任何接口，以保持独立。在 NEO Python 中，我们将用Docker打包 NEO 私链，用于开发。安装 Docker：
 > 
@@ -218,14 +210,12 @@ NEO Python 中的智能合约使用 Python 编写并由 neo-boa 编译。注意�
     sc build_run {path} {storage} {dynamic_invoke} {payable} {params} {returntype} (inputs) (--no-parse-addr) (--from-addr) (--owners) (--tx-attr)
 ```
 
-```
 1. {path}: Python 文件的路径。
 2. {storage}: 布尔型，该智能合约是否需要存储空间。
 3. {dynamic_invoke}: 布尔型，该智能合约是否需要动态调用。
 4. {payable}: 布尔型，是否支持向该智能合约转账。
 5. {params} : 参数类型，对应关系见下表。
 6. {returntype}: 返回值类型，对应关系见下表。
-```
 
 其他可选参数具体含义可运行 “sc build_run help” 查看。
 
@@ -346,13 +336,10 @@ NEO Python 中的智能合约使用 Python 编写并由 neo-boa 编译。注意�
 ```
 
 该合约功能如下：
-
-```
 1. 注册域名
 2. 查询域名
 3. 删除域名
 4. 转让域名
-```
 
 > 合约中的DNS与计算机网络中通常所说的DNS有所不同。通常的DNS是一个域名和IP地址的相互映射的分布式数据库，而该合约中的域名服务存储的则是域名和钱包地址之间的映射关系。
 
